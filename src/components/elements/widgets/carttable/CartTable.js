@@ -7,15 +7,15 @@ export default function CartTable() {
     const [cartDatas, setCartDatas] = useState([]);
     let process = require('../../../../db/myProcess.json');
 
-    useEffect(()=>{
-        fetch(`/cart`)
-        .then(res => {
-            return res.json();
-        })
-        .then(data => {
-            setCartDatas(data);
-        });
-    },[process.IP, process.PORT]);
+    // useEffect(()=>{
+    //     fetch(`/cart`)
+    //     .then(res => {
+    //         return res.json();
+    //     })
+    //     .then(data => {
+    //         setCartDatas(data);
+    //     });
+    // },[process.IP, process.PORT]);
 
     return(
         <div className="cart-main-area pt-90 pb-100">
